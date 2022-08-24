@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-color: #284054;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+    max-width: 600px;
+    box-shadow: 2px 4px 12px rgba(0,0,0, 0.6), 4px 2px 12px rgba(0,0,0, 0.6);;
+    word-wrap: wrap;
+    /* word-break: break-all; */
+    overflow: hidden;
+    border-radius: 5px;
+}
+.container::before{
+    content: '\f586';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15rem;
+    color: black;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.container p{
+margin: 1rem 0rem 4rem 0rem;
+line-height: 2rem;
+letter-spacing: 2px;
+font-size: 28px;
+
+}
+
+
+.container h1{
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 0;
+}  
+
+.container button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 23px;
+    background-color: #62CBE5;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    opacity: 0.7;
+    letter-spacing: 3px;
+}
+
+.container button:active{
+    outline: none;
+    opacity: 0.8;
+    transform: scale(0.99)
+}
